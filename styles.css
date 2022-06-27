@@ -305,19 +305,32 @@ nav .portfolio:focus {
 .list-images{
   display: flex;
   padding-left: 0;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
 }
+.list-images li{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
 .under-photo{
+  display: flex;
+  position: absolute;
+  justify-content: center;
   text-transform: uppercase;
   text-align: center;
   align-items: center;
   height: 70px;
-  padding-top: 24px;
+  width: 370px;
+  bottom: 0px;
   overflow: hidden;
   margin: auto;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  line-height: 16.41px;
+  line-height: 16px;
   letter-spacing: 0.03em;
   background: rgba(47, 48, 58, 0.8);
   opacity: 100%;
@@ -597,7 +610,6 @@ img {
   align-items: center;
   background-color: #fff;
   justify-content: space-between;
-  margin-bottom: 30px;
   border-radius: 0px;
 }  
 .imagine1:focus,
