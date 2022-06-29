@@ -154,7 +154,7 @@ header .mail{
 header .agency,
 header .portfolio,
 header .contact {
-  color: #757575;
+  color: var(--text-grey);
 }
 
 header .portfolio:hover,
@@ -163,18 +163,18 @@ header .agency:hover,
 header .agency:focus,
 header .contact:hover,
 header .contact.focus {
-  color: #2196f3;
+  color: var(--blue);
   border-radius: 2px;
 }
 
 header .tel:hover,
 header .mail:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 header .icon{
   display: flex;
   padding: 20px 0;
-  fill: #afb1b8;
+  fill: var(--blue);
   border-radius: 50%;
   transition-property: fill, background-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -363,6 +363,9 @@ nav .portfolio:focus {
 img {
   display: block;
 }
+.list-images2 figcaption{
+  margin-bottom: 30px;
+}
 .social-media{
   display: flex;
   justify-content: space-between;
@@ -372,14 +375,15 @@ img {
   padding-top: 20px;
 }
 .social-media li{
+	display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
 }
 .soc-media{
   display: flex;
-  fill:#ececec;
-  width: 20px;
-  height: 20px;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   transition-property: fill, background-color;
   transition: var(--transition);
@@ -389,10 +393,10 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #2f303a;
+  background-color:var(--white);
   align-items: center;
   justify-content: center;
-  fill: var(--blue);
+  fill: var(--grey);
 }
 .social-link:hover,
 .social-link:focus{
@@ -651,7 +655,6 @@ footer .container {
 }
 footer .end {
   text-decoration-line: none;
-  color: var(--blue);
 }
 footer address {
   color: var(--white);
@@ -673,7 +676,7 @@ footer .stat{
   margin-top: 16px;
   padding: 25px;
   background-color: var(--black);
-  fill: var(--blue);
+  fill: var(--white);
   border-radius: 50%;
   transition-property: fill, background-color;
   transition: var(--transition);
@@ -689,7 +692,7 @@ footer .stat{
   border-radius: 50%;
   cursor: pointer;
   margin-right: 10px;
-  fill: var(--blue);
+  fill: var(--white);
 }
 .media{
   width: 20px;
@@ -721,7 +724,7 @@ footer .tel {
 }
 footer .tel:hover,
 footer .tel:focus {
-  color: #2196f3;
+  color: var(--blue);
   text-decoration: underline;
 }
 footer .mail {
@@ -731,7 +734,7 @@ footer .mail {
 }
 footer .mail:hover,
 footer .mail:focus {
-  color: #2196f3;
+  color: var(--blue);
   text-decoration: underline;
 }
 footer label{
@@ -744,6 +747,7 @@ font-weight: bold;
 letter-spacing: 0.03em;
 }
 footer input{
+  position: relative;
     border: 1px solid var(--white);
     border-radius: 4px;
     width: 358px;
@@ -912,33 +916,38 @@ input{
   justify-content: center; 
   margin-top: 0;
 }
-.checkbox a{
-  color: var(--blue);
-}
 .check-lex{
   margin: 0;
   padding: 0;
   align-items: center;
   cursor: pointer;
 }
-.check-lex a{
-  text-decoration: underline;
-}
 .check-lex::before{
   content: "";
-  display: inline-block;
+  display: inline-flex;
   width: 16px;
   height: 16px;
-  margin-left: 0;
+  margin-top: 20px;
   margin-right: 7px;
   outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 2px;
   transition: all var(--transition);
 }
+.check-lex a{
+  text-decoration:none;
+  color: var(--blue);
+  transition: var(--transition);
+  transition-property: text-decoration, color;
+}
+.check-lex a:hover{
+  text-decoration:underline;
+  color: var(--blue);
+}
 .web:checked + .check-lex::before {
  background-color:var(--blue);
  border: 3px solid var(--white);
-  background-image: url(./images/check.png);
+  background-image: url(./images/check.svg);
+  transition: var(--transition);
   background: no-repeat;
 }
 .form button{
