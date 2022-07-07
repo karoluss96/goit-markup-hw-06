@@ -122,7 +122,8 @@ ol {
   color: var(--text-black);
 }
 header .tel,
-header .mail{
+header .mail,
+header .ic{
   color: #757575;
 }
 
@@ -162,16 +163,17 @@ header .portfolio:focus,
 header .agency:hover,
 header .agency:focus,
 header .contact:hover,
-header .contact.focus {
+header .contact:focus {
   color: var(--blue);
   border-radius: 2px;
 }
 
 header .tel:hover,
-header .mail:hover {
+header .mail:hover,
+header .ics:hover {
   color: var(--blue);
 }
-header .icon{
+header .ic{
   display: flex;
   padding: 20px 0;
   fill: var(--blue);
@@ -179,7 +181,7 @@ header .icon{
   transition-property: fill, background-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-header .icons1{
+header .ics1{
   width: 16px;
   height: 12px;
   fill: #afb1b8;
@@ -187,7 +189,7 @@ header .icons1{
   transition-property: fill, background-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-header .icons2{
+header .ics2{
   width: 10px;
   height: 16px;
   fill: #afb1b8;
@@ -258,8 +260,7 @@ nav .portfolio:focus {
   margin-left: 20px;
   padding-top: 20px;
 }
-.icon,
-.corpos{
+.ic{
   display: flex;
   justify-content: center;
   height: 120px;
@@ -272,15 +273,35 @@ nav .portfolio:focus {
   transition-property: fill, background-color;
   transition: var(--transition);
 }
-.corpos .icons{
+.sec2 .ic{
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.corpos{
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  fill: #757575;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+.corpos .ics{
   width: 106px;
   height: 60px;
 }
-.icons{
+.ics{
   width: 70px;
   height: 70px;
 }
-.icons:hover{
+.ic:hover{
   background-color: #2196f3;
 }
 .corpos:hover,
@@ -374,8 +395,8 @@ img {
   margin-left: 32px;
   padding-top: 20px;
 }
-.social-media li{
-	display: flex;
+.soc-li{
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
@@ -435,6 +456,29 @@ img {
 .imagineB,
 .imagineC{
   border-radius: 0px;
+}
+.person{
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 30px 97px 10px;
+}
+
+.icon-link{
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  fill: var(--text-grey);
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+.icon-link:hover,
+.icon-link:focus{
+  border: var(--blue);
+  fill: var(--blue);
 }
 .list-buttons{
   display: flex;
@@ -656,7 +700,7 @@ footer .container {
 footer .end {
   text-decoration-line: none;
 }
-footer address {
+.address {
   color: var(--white);
   font-size: 16px;
   font-style: normal;
@@ -665,6 +709,7 @@ footer address {
   font-weight: 400;
   list-style-type: none;
   margin-bottom: 9px;
+  gap: 30px;
 }
 footer .stat{
   color: var(--white);
