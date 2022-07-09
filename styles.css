@@ -173,29 +173,46 @@ header .mail:hover,
 header .ics:hover {
   color: var(--blue);
 }
+
+header .tel,
+header .mail,
+header .ic{
+  cursor: pointer;
+  text-decoration: none;
+  color: #757575;
+}
+header .tel{
+	padding-right: 12px;
+}
+header .mail{
+	padding-right:50px;
+}
+
+header .tel:hover,
+header .mail:hover,
+header .ic:hover{
+  color: var(--blue);
+  fill: var(--blue);
+  cursor: pointer;
+}
 header .ic{
   display: flex;
   padding: 20px 0;
-  fill: var(--blue);
+  fill: var(--grey);
   border-radius: 50%;
   transition-property: fill, background-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-header .ics1{
+header .ics{
   width: 16px;
   height: 12px;
-  fill: #afb1b8;
+  fill: var(--grey);
   border-radius: 50%;
   transition-property: fill, background-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-header .ics2{
-  width: 10px;
-  height: 16px;
-  fill: #afb1b8;
-  border-radius: 50%;
-  transition-property: fill, background-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+header .ics:hover{
+	fill: var(--blue);
 }
 
 nav .portfolio:hover,
@@ -697,7 +714,15 @@ footer {
 footer .container {
   padding-top: 60px;
 }
+
 footer .end {
+	font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  line-height: 1.19;
   text-decoration-line: none;
 }
 .address {
@@ -714,27 +739,26 @@ footer .end {
 footer .stat{
   color: var(--white);
 }
-.join {
+.join{
   list-style: none;
   display: flex;
   align-items: center;
   margin-top: 16px;
-  padding: 25px;
+  flex-wrap: wrap;
+  gap: 10px;
   background-color: var(--black);
   fill: var(--white);
-  border-radius: 50%;
   transition-property: fill, background-color;
   transition: var(--transition);
 }
-.join li{
-  justify-content: center;
+.join-li{
+  justify-content: space-between;
   align-items: center;
   display: flex;
-  width: 44px;
-  height: 44px;
   padding: 0px;
+  flex-wrap: wrap;
+  gap: 10px;
   background-color: var(--black);
-  border-radius: 50%;
   cursor: pointer;
   margin-right: 10px;
   fill: var(--white);
@@ -747,16 +771,39 @@ footer .stat{
 }
 .foot-social{
   margin-left: 180px;
-  padding-top: 5px;
+  flex-wrap: wrap;
 }
-
-footer .come-in{
+.come-in{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
   width: 113px;
   height: 16px;
   text-transform: uppercase;
-  font-size: 14px;
   font-family: 'Roboto';
   letter-spacing: 0.03em;
+  padding-bottom: 20px;
+  color: var(--white);
+}
+.foot-link{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--white);
+}
+.address {
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  list-style-type: none;
+  margin-bottom: 9px;
+  gap: 30px;
+}
+footer .stat{
+  color: var(--white);
 }
 footer .media:hover,
 footer .media:focus{
@@ -766,7 +813,9 @@ footer .tel {
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
   opacity: 40%;
+  padding-bottom: 8px;
 }
+
 footer .tel:hover,
 footer .tel:focus {
   color: var(--blue);
@@ -776,7 +825,9 @@ footer .mail {
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
   opacity: 40%;
+  padding-bottom: 8px;
 }
+
 footer .mail:hover,
 footer .mail:focus {
   color: var(--blue);
