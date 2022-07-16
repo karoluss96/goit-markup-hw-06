@@ -428,21 +428,21 @@
       <form class="form" name="sign-up" action="" method="POST">
         <h2 class="form-title">Zostaw swoje dane w formularzu poniżej</h2>
         <label for="name">Imię
-          <input type="text" name="name" id="name" required>
+          <input class="svg-name back-svg" type="text" name="name" id="name" required>
           <svg class="con">
             <use href="./images/icons.svg#icon-avatar">
             </use>
           </svg>
         </label>
         <label for="phone">Telefon
-          <input type="tel" name="phone" id="phone" required>
+          <input class="svg-tel back-svg" type="tel" name="phone" id="phone" required>
           <svg class="con">
             <use href="./images/icons.svg#icon-tel2">
             </use>
           </svg>
         </label>
         <label for="user_mail">E-mail
-          <input type="email" name="mail" id="user_mail" required>
+          <input class="svg-mail back-svg" type="email" name="mail" id="user_mail" required>
           <svg class="con">
             <use href="./images/icons.svg#icon-env2">
             </use>
@@ -451,9 +451,9 @@
         <label class="comment">Komentarz
         <textarea name="consent" placeholder="Wprowadź tekst" rows="6"></textarea>
         </label>
-        <label class="check-lex checkbox">
-		<input class="web visually-hidden" type="checkbox" name="checkbox" required>
-		<p class ="checked">
+        <label class="checkbox" for="terms">
+		<input class="check-lex visually-hidden" type="checkbox" name="checkbox" required>
+		<p class ="checked-p">
           Oświadczam, iż akceptuję <a href="#rules">Regulamin</a>
             i  <a href="#privacypolicy">Politykę Prywatności</a>.</p> 
           </label>
