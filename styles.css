@@ -899,18 +899,23 @@ footer input{
     height: 50px;
     padding-left: 42px;
     line-height: 1.15;
+    font-size: 100%;
+    margin: 0;
     margin-bottom: 30px;
     color: var(--black);
     padding-left: 10px;
     background-color: var(--black);
 }
 footer input:hover,
-footer input:focus{
+footer input:focus,
+footer textarea:focus{
   border: 1px solid var(--blue);
   border-radius: 4px;
   outline: none;
+  transition: var(--transition);
   background-color: var(--black);
 }
+
 .back-svg{
   background-repeat: no-repeat;
   background-position: left 15px center;
@@ -935,10 +940,12 @@ footer button{
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
+  justify-content: center;
+  display: flex;
   letter-spacing: 0.06em;
   color: #fff;
   margin-bottom: 30px;
-  border: none;
+  border: 0px;
   cursor: pointer;
   padding-bottom: 3px;
 }
@@ -1033,6 +1040,12 @@ input{
 }
 .form textarea{
   width: 448px;
+  height: 120px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--text-grey);
+  margin-top: 4px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1044,7 +1057,7 @@ input{
   height: 20px;
   margin-top: 18px;
   margin-left: 12px;
-  fill:#212121;
+  fill:var(--text-black);
 }
 .form input:focus, 
 .form textarea:focus {
@@ -1060,14 +1073,27 @@ input{
     font-size: 12px;
     display: block;
 }
+.form input:focus,
+.form textarea:focus{
+  outline: none;
+  transition: var(--transition);
+}
 .form input:hover,
 .form textarea:hover{
   border: 1px solid var(--blue);
   border-radius: 4px;
 }
+.back-svg:focus-within,
+textarea:focus-within{
+  fill: var(--blue);
+  transition: var(--transition);
+}
+.back-svg:focus-within svg{
+  fill: var(--blue);
+  transition: var(--transition);
+}
 .comment{
   width: 448px;
-  height: 120px;
 }
 .form
 .form label{
@@ -1083,29 +1109,21 @@ input{
     margin-top: 10px;
 }
 .checkbox{
-  line-height: 1.16;
-  justify-content: center; 
-  margin: 20px 77px 30px 54px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  position: relative;
+  margin-top: 20px;
 
 }
-.check-lex{
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  cursor: pointer;
-}
-.checked{
+
+.checked-p{
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--text-grey);
-  margin-left: 8px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--text-grey);
+    margin: 0px;
+    margin-left: 8px;
 }
-.checked::before{
+.checked-p:before{
   display: inline-block;
   content: "";
   width: 16px;
@@ -1115,24 +1133,22 @@ input{
   margin-right: 9px;
   transition: var(--transition);
 }
-.check-lex a{
+.checked-p a{
   text-decoration:none;
   color: var(--blue);
   transition: var(--transition);
   transition-property: text-decoration, color;
 }
-.check-lex a:hover{
+.checked-p a:hover{
   text-decoration:underline;
   color: var(--blue);
 }
 
-
-.web:checked + .check-lex::before {
+.check-lex:checked + .checked-p::before {
  background-color:var(--blue);
  outline: 1px solid var(--blue);
  border-radius: 2px;
   background-image: url(./images/check.svg);
-  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
