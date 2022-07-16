@@ -53,7 +53,7 @@ body {
   min-height: 80px;
   display: flex;
   align-items: center;
-	padding: 25px 0;
+   padding: 25px 0;
 }
 .index ::after{
 text-decoration: underline;
@@ -75,7 +75,7 @@ text-decoration: underline;
   border-bottom: 0cm;
   border-radius: 2px;
   width: 100%;
-  bottom: -62px;
+  bottom: -31px;
   left: 0;
 }
 .Web,
@@ -103,7 +103,6 @@ text-decoration: underline;
   color: var(--text-black);
   line-height: 1.19;
   text-decoration-line: none;
-  padding: 24px 93px 24px 0px;
 }
 .index nav a {
   color: var(--text-black);
@@ -161,6 +160,7 @@ header .mail{
   text-transform: uppercase;
   line-height: 1.36;
   text-align: center;
+  max-width: 1600px;
   letter-spacing: 0.06em;
   justify-content: space-between;
   padding-top: 75px;
@@ -242,7 +242,7 @@ nav .portfolio:focus {
   justify-content: center;
   display: flex;
   align-items: center;
-  background-size: 1600px 600px;
+  max-width: 1600px;
   background-image:   linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4),
@@ -374,10 +374,11 @@ nav .portfolio:focus {
   text-align: justify;
 }
 .list-images{
-  font-size: 14px;
   display: flex;
   padding-left: 0;
+  list-style-type: none;
   justify-content: space-between;
+  align-items: center;
 }
 
 .under-photo{
@@ -513,6 +514,7 @@ img {
 .imagineB,
 .imagineC{
   border-radius: 0px;
+  position: relative;
 }
 .person{
   font-size: 16px;
@@ -784,7 +786,7 @@ footer .container {
 }
 
 footer .end {
-	font-family: Raleway;
+  font-family: Raleway;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -827,9 +829,7 @@ footer .stat{
   flex-wrap: wrap;
   gap: 10px;
   border-radius: 50%;
-  background-color: var(--black);
-  cursor: pointer;
-  margin-right: 10px;
+  background-color: var(--text-grey);
   fill: var(--white);
 }
 .join-li:hover{
