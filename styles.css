@@ -952,6 +952,7 @@ footer button{
 .send{
   width: 24px;
   height: 24px;
+  margin-left: 25px;
 }
 .backdrop{
   opacity: 100%;
