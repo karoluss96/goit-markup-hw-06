@@ -133,7 +133,7 @@ ol {
 }
 header .tel,
 header .mail{
-  color: var(--text-grey);
+  color: var(--text-black);
   margin-left: 10px;
 }
 
@@ -238,6 +238,7 @@ nav .portfolio:focus {
 }
 .sec1{
   background-color: rgba(47, 48, 58, 1);
+  background-position: center;
   height: 600px;
   text-align: center;
   justify-content: center;
@@ -464,8 +465,8 @@ img {
 }
 .social-link{
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: var(--white);
   align-items: center;
@@ -1036,6 +1037,7 @@ input{
     text-indent: 42px;
     padding-left: 0px;
 }
+
 .form textarea{
   width: 448px;
   height: 120px;
@@ -1077,7 +1079,9 @@ input{
   transition: var(--transition);
 }
 .form input:hover,
-.form textarea:hover{
+.form textarea:hover,
+.form input:focus,
+.form textarea:focus{
   border: 1px solid var(--blue);
   border-radius: 4px;
 }
@@ -1110,9 +1114,8 @@ textarea:focus-within{
   display: flex;
   align-items: center;
   margin-top: 20px;
-
+  cursor: pointer;
 }
-
 .checked-p{
   font-size: 14px;
     line-height: 24px;
@@ -1121,7 +1124,7 @@ textarea:focus-within{
     margin: 0px;
     margin-left: 8px;
 }
-.checked-p:before{
+.checkbox::before{
   display: inline-block;
   content: "";
   width: 16px;
@@ -1138,6 +1141,7 @@ textarea:focus-within{
   transition-property: text-decoration, color;
 }
 .checked-p a:hover{
+  cursor: pointer;
   text-decoration:underline;
   color: var(--blue);
 }
@@ -1146,7 +1150,7 @@ textarea:focus-within{
  background-color:var(--blue);
  outline: 1px solid var(--blue);
  border-radius: 2px;
-  background-image: url(./images/check.svg);
+  background-image: url(../images/check.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
