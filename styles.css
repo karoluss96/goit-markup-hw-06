@@ -238,7 +238,7 @@ nav .portfolio:focus {
 }
 .sec1{
   background-color: rgba(47, 48, 58, 1);
-  background-position: center;
+  margin: 0 auto;
   height: 600px;
   text-align: center;
   justify-content: center;
