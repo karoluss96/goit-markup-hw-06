@@ -1118,7 +1118,7 @@ textarea:focus-within{
   margin-top: 20px;
   cursor: pointer;
 }
-.checked-p{
+.checked-p::before{
   font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
