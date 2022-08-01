@@ -977,6 +977,13 @@ footer button{
 .close-btn:hover{
 	cursor: pointer;
 }
+.input-box{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+}
+
 .modal{
   position: absolute;
   top: 50%;
@@ -1030,6 +1037,12 @@ input{
   font-size: 100%;
   font-family: inherit;
 }
+ 
+.label:focus-within svg{
+    fill: #2196F3;
+    transition: var(--transition);
+}
+
 .form input{
   border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -1040,7 +1053,7 @@ input{
     padding-left: 0px;
 }
 
-.form textarea{
+.comm{
   width: 448px;
   height: 120px;
   font-size: 12px;
@@ -1064,6 +1077,7 @@ input{
 .form input:focus, 
 .form textarea:focus {
   outline: none;
+  transition: var(--transition);
 }
 
 .form input, 
@@ -1118,13 +1132,24 @@ textarea:focus-within{
   margin-top: 20px;
   cursor: pointer;
 }
-.checked-p::before{
+.checked-p{
   font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--text-grey);
     margin: 0px;
     margin-left: 8px;
+    transition: var(--transition);
+}
+.checked-p::before{
+  display: inline-block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    outline: 1px solid #212121;
+    border-radius: 2px;
+    margin-right: 9px;
+    transition: var(--transition);
 }
 .checkbox::before{
   display: inline-block;
@@ -1152,7 +1177,7 @@ textarea:focus-within{
  background-color:var(--blue);
  outline: 1px solid var(--blue);
  border-radius: 2px;
-  background-image: url(../images/check.png);
+  background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1177,7 +1202,6 @@ textarea:focus-within{
 }
 .visually-hidden{
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
