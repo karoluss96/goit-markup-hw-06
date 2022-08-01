@@ -846,10 +846,10 @@ footer .stat{
   fill: var(--white);
 }
 .foot-social{
-  margin-left: 70px;
   flex-wrap: wrap;
 }
 .come-in{
+  padding-top: 12px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.16;
@@ -888,7 +888,32 @@ footer .mail {
   opacity: 40%;
   padding-bottom: 8px;
 }
-
+.newsletter{
+  padding-top: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0px;
+}
+.send-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-send{
+  width: 358px;
+  height: 50px;
+  border: 1px solid var(--white);
+  filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15));
+  border-radius: 4px;
+  background-color: var(--black);
+  margin-top: 20px;
+}
 footer label{
 margin-bottom: 20px;
 align-items: center; 
@@ -898,21 +923,7 @@ font-family: 'Roboto';
 font-weight: bold;
 letter-spacing: 0.03em;
 }
-footer input{
-  position: relative;
-    border: 1px solid var(--white);
-    border-radius: 4px;
-    width: 358px;
-    height: 50px;
-    padding-left: 42px;
-    line-height: 1.15;
-    font-size: 100%;
-    margin: 0;
-    margin-bottom: 30px;
-    color: var(--black);
-    padding-left: 10px;
-    background-color: var(--black);
-}
+
 footer input:hover,
 footer input:focus,
 footer textarea:focus{
@@ -921,12 +932,6 @@ footer textarea:focus{
   outline: none;
   transition: var(--transition);
   background-color: var(--black);
-}
-
-.back-svg{
-  background-repeat: no-repeat;
-  background-position: left 15px center;
-  transition: background-image var(--transition);
 }
 
 footer button{
@@ -947,6 +952,8 @@ footer button{
   margin-bottom: 30px;
   border: 0px;
   cursor: pointer;
+  margin-left: 12px;
+  margin-top: 30px;
   padding-bottom: 3px;
 }
 .send{
@@ -976,12 +983,6 @@ footer button{
 }
 .close-btn:hover{
 	cursor: pointer;
-}
-.input-box{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  outline: none;
 }
 
 .modal{
@@ -1021,7 +1022,7 @@ footer button{
   flex-direction: column;
   position: relative;
 }
-.form-title{
+.form-title{ 
   font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -1031,15 +1032,51 @@ footer button{
     margin-top: 40px;
     margin-bottom: 30px;
 }
+.input-box{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+}
+.lab{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-grey);
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
 input{
   line-height: 1.15;
   margin: 0;
   font-size: 100%;
   font-family: inherit;
 }
+.con{
+  position: absolute;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  margin-left: 12px;
+  fill:var(--text-black);
+}
+.back-svg{
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  transition: background-image var(--transition);
+}
+.lab:focus-within,
+.comm:focus-within{
+  fill: var(--blue);
+  transition: var(--transition);
+}
  
-.label:focus-within svg{
-    fill: #2196F3;
+.lab:focus-within svg{
+    fill: var(--blue);
     transition: var(--transition);
 }
 
@@ -1050,10 +1087,10 @@ input{
     height: 40px;
     margin-top: 4px;
     text-indent: 42px;
-    padding-left: 0px;
+    padding: 0px;
 }
 
-.comm{
+.form textarea{
   width: 448px;
   height: 120px;
   font-size: 12px;
@@ -1065,23 +1102,14 @@ input{
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.con{
-  position: absolute;
-  display: flex;
-  width: 20px;
-  height: 20px;
-  margin-top: 18px;
-  margin-left: 12px;
-  fill:var(--text-black);
-}
+
 .form input:focus, 
 .form textarea:focus {
   outline: none;
   transition: var(--transition);
 }
 
-.form input, 
-.form textarea{
+.form input {
   color: var(--text-grey);
     font-family: "Roboto";
     font-style: normal;
@@ -1101,31 +1129,7 @@ input{
   border: 1px solid var(--blue);
   border-radius: 4px;
 }
-.back-svg:focus-within,
-textarea:focus-within{
-  fill: var(--blue);
-  transition: var(--transition);
-}
-.back-svg:focus-within svg{
-  fill: var(--blue);
-  transition: var(--transition);
-}
-.comment{
-  width: 448px;
-}
-.form
-.form label{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--text-grey);
-    padding-left: 40px;
-    margin-bottom: 4px;
-    margin-top: 10px;
-}
+
 .checkbox{
   display: flex;
   align-items: center;
@@ -1151,16 +1155,6 @@ textarea:focus-within{
     margin-right: 9px;
     transition: var(--transition);
 }
-.checkbox::before{
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 15px;
-  outline: 1px solid var(--text-black);
-  border-radius: 2px;
-  margin-right: 9px;
-  transition: var(--transition);
-}
 .checked-p a{
   text-decoration:none;
   color: var(--blue);
@@ -1185,20 +1179,20 @@ textarea:focus-within{
 }
 .form button{
   width: 200px;
-    height: 50px;
-    background: var(--blue);
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #fff;
-    margin: auto;
-    margin-top: 30px;
-    border: none;
-    cursor: pointer;
+  height: 50px;
+  background: var(--blue);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #fff;
+  margin: auto;
+  margin-top: 5px;
+  border: 0px;
+  cursor: pointer;
 }
 .visually-hidden{
   position: absolute !important;
