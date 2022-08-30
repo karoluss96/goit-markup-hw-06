@@ -5,12 +5,11 @@
   <meta charset="utf-8"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="modern-normalize.css" />
+  <link rel="stylesheet" href="css/modern-normalize.css" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto&display=swap" rel="stylesheet">
   <title>Web Studio</title>
   <meta name="Autor" content="Karol Śpila">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="style-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -27,21 +26,21 @@
 		</ul>
     </nav>
     <ul class="list-nav1">
-    <li class="list-menu1">
-	  <a class="tel" href="tel:+48111111">
+      <li class="list-menu1">
+	    <a class="mail" href="mailto:info@example.com">
         <svg class="ics" width="16px" height="12px">
-          <use href="./images/icons.svg#icon-smartphone">
-          </use>
-        </svg>
-      +481111111</a></li>
-    <li class="list-menu1">
-	  <a class="mail" href="mailto:info@example.com">
-        <svg class="ics" width="10px" height="16px">
-          <use href="./images/icons.svg#icon-envelope">
+          <use href="../images/icons.svg#icon-envelope">
           </use>
         </svg>  
-    info@devstudio.com</a>
-  </li>
+      info@devstudio.com</a>
+      <li class="list-menu1">
+        <a class="tel" href="tel:+48111111111">
+          <svg class="ics" width="10px" height="16px">
+            <use href="./images/icons.svg#icon-smartphone">
+            </use>
+          </svg>
+        +48 111 111 111</a>
+      </li>
   </ul>
   </div>
   </header>
@@ -59,12 +58,12 @@
         <li class="lorem-li">
           <div class="ic">
             <svg class="ics">
-              <use href="./images/icons.svg#icon-antenna">
+              <use href="../images/icons.svg#icon-antenna">
               </use>
             </svg>
           </div>
-      <span class ="text1">Lorem ipsum</span>
-      <span class ="text11">
+      <span class ="text">Lorem ipsum</span>
+      <span class ="text-lorem">
 		    Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
            Nam vel arcu sem. Sed non sodales dui. 
@@ -73,12 +72,12 @@
       <li class="lorem-li">
       <div class="ic">
           <svg class="ics">
-            <use href="./images/icons.svg#icon-clock">
+            <use href="../images/icons.svg#icon-clock">
             </use>
           </svg>
         </div>
-      <span class="text2">Lorem ipsum</span>
-      <span class ="text22">
+      <span class="text">Lorem ipsum</span>
+      <span class ="text-lorem">
           Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
           Nam vel arcu sem. Sed non sodales dui. 
@@ -87,12 +86,12 @@
       <li class="lorem-li">
         <div class="ic">
           <svg class="ics">
-            <use href="./images/icons.svg#icon-diagram">
+            <use href="../images/icons.svg#icon-diagram">
             </use>
           </svg>
         </div>
-      <span class="text3">Lorem ipsum</span>
-      <span class ="text33"> 
+      <span class="text">Lorem ipsum</span>
+      <span class ="text-lorem"> 
         Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
           Nam vel arcu sem. Sed non sodales dui. 
@@ -101,12 +100,12 @@
       <li class="lorem-li">
         <div class="ic">
           <svg class="ics">
-            <use href="./images/icons.svg#icon-astronaut">
+            <use href="../images/icons.svg#icon-astronaut">
             </use>
           </svg>
         </div>
-      <span class="text4">Lorem ipsum</span>
-      <span class ="text44">
+      <span class="text">Lorem ipsum</span>
+      <span class ="text-lorem">
           Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
           Nam vel arcu sem. Sed non sodales dui. 
@@ -120,19 +119,19 @@
   <h2 class="about">Czym się zajmujemy?</h2>
      <ul class="list-images">
      <li>
-      <figure class="imagineA">
+      <figure class="imagine-work">
       <img src="images/img2.png" alt="Projektowanie" width="370" height="294"/>
     <figcaption class="under-photo">Aplikacje komputerowe</figcaption>
     </figure>
   </li>
     <li>
-      <figure class="imagineB">
+      <figure class="imagine-work">
       <img src="images/img1.png" alt="Mockaping" width="370" height="294"/>
       <figcaption class="under-photo">Aplikacje mobilne</figcaption>
     </figure>
     </li>
     <li>
-      <figure class="imagineC">
+      <figure class="imagine-work">
       <img src="images/img3.png" alt="Ustalanie" width="370" height="294"/>
       <figcaption class="under-photo">rozwiązania graficzne</figcaption>
     </figure>
@@ -142,9 +141,9 @@
   </section>
   <section class ="section sec4">
   <div class="sec4 container"> 
-      <h2 class = 'we'>nasz zespół</h2>
-      <ul class="list-images2">
-      <li><figure class="imagination1"><img  src="images/img-3.png" alt="John Doe" width="270" height="260"/>
+      <h2 class = 'we'>Nasz zespół</h2>
+      <ul class="list-us">
+      <li><figure class="imagination"><img  src="images/img-3.png" alt="John Doe" width="270" height="260"/>
         <figcaption>
           <h3 class="person">John Doe</h3>
 		  <p class="job"> Product Designer</p>
@@ -152,7 +151,7 @@
         <li class="soc-li">
           <a class="social-link" href="">
             <svg class="soc-media">
-              <use href="./images/icons.svg#icon-instagram">
+              <use href="../images/icons.svg#icon-instagram">
               </use>
             </svg>
           </a>
@@ -160,7 +159,7 @@
         <li class="soc-li">
           <a class="social-link" href="">
             <svg class="soc-media">
-              <use href="./images/icons.svg#icon-twitter">
+              <use href="../images/icons.svg#icon-twitter">
               </use>
             </svg>
           </a>
@@ -168,7 +167,7 @@
         <li class="soc-li">
           <a class="social-link" href="">
             <svg class="soc-media">
-              <use href="./images/icons.svg#icon-facebook">
+              <use href="../images/icons.svg#icon-facebook">
               </use>
             </svg>
           </a>
@@ -176,14 +175,14 @@
         <li class="soc-li">
           <a class="social-link" href="">
             <svg class="soc-media">
-              <use href="./images/icons.svg#icon-linkedin">
+              <use href="../images/icons.svg#icon-linkedin">
               </use>
             </svg>
           </a>
         </li> 
         </ul>
         </figcaption></figure></li>
-      <li><figure class="imagination2"><img  src="images/img-2.png" alt="Fronted Developer" width="270" height="260"/>
+      <li><figure class="imagination"><img  src="images/img-2.png" alt="Fronted Developer" width="270" height="260"/>
         <figcaption>
           <h3 class="person">John Doe</h3>
           <p class="job"> Frontend Developer</p>
@@ -222,7 +221,7 @@
             </li> 
             </ul>  
         </figcaption></figure></li>
-      <li><figure class="imagination3"><img  src="images/img-1.png" alt="Marketing" width="270" height="260"/>
+      <li><figure class="imagination"><img  src="images/img-1.png" alt="Marketing" width="270" height="260"/>
         <figcaption>
           <h3 class="person">John Doe</h3>
           <p class="job"> Marketing </p>
@@ -261,7 +260,7 @@
             </li> 
             </ul>
         </figcaption></figure></li>
-      <li><figure class="imagination4"><img  src="images/imgJD.png" alt="UI Designer" width="270" height="260"/> 
+      <li><figure class="imagination"><img  src="images/imgJD.png" alt="UI Designer" width="270" height="260"/> 
         <figcaption>
           <h3 class="person">John Doe</h3>
           <p class="job"> UI Designer</p>
@@ -269,7 +268,7 @@
             <li class="soc-li">
               <a class="social-link" href="">
                 <svg class="soc-media">
-                  <use href="./images/icons.svg#icon-instagram">
+                  <use href="../images/icons.svg#icon-instagram">
                   </use>
                 </svg>
               </a>
@@ -277,7 +276,7 @@
             <li class="soc-li">
               <a class="social-link" href="">
                 <svg class="soc-media">
-                  <use href="./images/icons.svg#icon-twitter">
+                  <use href="../images/icons.svg#icon-twitter">
                   </use>
                 </svg>
               </a>
@@ -285,7 +284,7 @@
             <li class="soc-li">
               <a class="social-link" href="">
                 <svg class="soc-media">
-                  <use href="./images/icons.svg#icon-facebook">
+                  <use href="../images/icons.svg#icon-facebook">
                   </use>
                 </svg>
               </a>
@@ -293,7 +292,7 @@
             <li class="soc-li">
               <a class="social-link" href="">
                 <svg class="soc-media">
-                  <use href="./images/icons.svg#icon-linkedin">
+                  <use href="../images/icons.svg#icon-linkedin">
                   </use>
                 </svg>
               </a>
@@ -310,7 +309,7 @@
           <li class = "corpos">
             <a class="icon-link" href="">
               <svg class="ics">
-                <use href="./images/icons.svg#icon-Logo-1">
+                <use href="../images/icons.svg#icon-Logo-1">
                 </use>
               </svg>
             </a>
@@ -318,7 +317,7 @@
           <li class = "corpos">
             <a class="icon-link" href="">
               <svg class="ics">
-                <use href="./images/icons.svg#icon-Logo-2">
+                <use href="../images/icons.svg#icon-Logo-2">
                 </use>
               </svg>
             </a>
@@ -326,7 +325,7 @@
           <li class = "corpos">
             <a class="icon-link" href="">
               <svg class="ics">
-                <use href="./images/icons.svg#icon-Logo-3">
+                <use href="../images/icons.svg#icon-Logo-3">
                 </use>
               </svg>
             </a>
@@ -334,7 +333,7 @@
           <li class = "corpos">
             <a class="icon-link" href="">
               <svg class="ics">
-                <use href="./images/icons.svg#icon-Logo-4">
+                <use href="../images/icons.svg#icon-Logo-4">
                 </use>
               </svg>
             </a>
@@ -342,7 +341,7 @@
           <li class = "corpos">
             <a class="icon-link" href="">
               <svg class="ics">
-                <use href="./images/icons.svg#icon-Logo-5">
+                <use href="../images/icons.svg#icon-Logo-5">
                 </use>
               </svg>
             </a>
@@ -350,7 +349,7 @@
           <li class = "corpos">
             <a class="icon-link" href="">
               <svg class="ics">
-                <use href="./images/icons.svg#icon-Logo-6">
+                <use href="../images/icons.svg#icon-Logo-6">
                 </use>
               </svg>
             </a>
@@ -369,8 +368,8 @@
     </h2>
       <address class="address">
         <p> m. Warszawa Aleje Jerozolimskie 21 </p>
-        <p> <a class="mail" href="mailto:info@example.com">info@example.com</a></p>
-      <p><a class="tel" href="tel:+48111111">+481111111</a></p>
+        <p><a class="mail" href="mailto:info@example.com">info@example.com</a></p>
+      <p><a class="tel" href="tel:+48111111111">+48 111 111 111</a></p>
 </address>
 </div>
 <div class="foot-social">
@@ -379,7 +378,7 @@
     <li class="join-li">
       <a class="foot-link" href="#">
       <svg class="media">
-        <use href="./images/icons.svg#icon-instagram">
+        <use href="../images/icons.svg#icon-instagram">
         </use>
       </svg>
     </a>
@@ -387,7 +386,7 @@
     <li class="join-li">
       <a class="foot-link" href="#">
       <svg class="media">
-        <use href="./images/icons.svg#icon-twitter">
+        <use href="../images/icons.svg#icon-twitter">
         </use>
       </svg>
     </a>
@@ -395,7 +394,7 @@
     <li class="join-li">
       <a class="foot-link" href="#">
       <svg class="media">
-        <use href="./images/icons.svg#icon-facebook">
+        <use href="../images/icons.svg#icon-facebook">
         </use>
       </svg>
     </a>
@@ -403,7 +402,7 @@
     <li class="join-li">
       <a class="foot-link" href="#">
       <svg class="media">
-        <use href="./images/icons.svg#icon-linkedin">
+        <use href="../images/icons.svg#icon-linkedin">
         </use>
       </svg>
     </a>
@@ -418,7 +417,7 @@
   </label>
     <button type="submit">Zapisz się
     <svg class="send">
-      <use href="./images/icons.svg#icon-send">
+      <use href="../images/icons.svg#icon-send">
       </use>
     </svg> 
   </button>
@@ -435,21 +434,21 @@
         <label class="lab" for="name">Imię
           <input class="svg-name back-svg" type="text" name="name" id="name" required/>
           <svg class="con">
-            <use href="./images/icons.svg#icon-avatar">
+            <use href="../images/icons.svg#icon-avatar">
             </use>
           </svg>
         </label>
         <label class="lab" for="phone">Telefon
           <input class="svg-tel back-svg" type="tel" name="phone" id="phone" required/>
           <svg class="con">
-            <use href="./images/icons.svg#icon-tel2">
+            <use href="../images/icons.svg#icon-tel2">
             </use>
           </svg>
         </label>
         <label class="lab" for="user_mail">E-mail
           <input class="svg-mail back-svg" type="email" name="mail" id="user_mail" required/>
           <svg class="con">
-            <use href="./images/icons.svg#icon-env2">
+            <use href="../images/icons.svg#icon-env2">
             </use>
           </svg>
         </label>
