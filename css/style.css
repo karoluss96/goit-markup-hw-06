@@ -145,7 +145,7 @@ text-decoration: underline;
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.15;
   letter-spacing: 0.03em;
 }
 .Web{
@@ -220,7 +220,7 @@ header .mail{
   font-weight: 900;
   font-size: 44px;
   text-transform: uppercase;
-  line-height: 1.36;
+  line-height: 1.4;
   text-align: center;
   max-width: 1600px;
   letter-spacing: 0.06em;
@@ -320,7 +320,7 @@ nav .portfolio:focus {
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   border: none;
   text-align: center;
   letter-spacing: 0.06em;
@@ -354,7 +354,7 @@ nav .portfolio:focus {
 .lorem{
   background-color: var(--white);
   display: flex;
-  padding: 40px;
+  gap:30px;
   letter-spacing: 0.03em;
   align-items: center;
   justify-content: space-between;
@@ -365,7 +365,7 @@ nav .portfolio:focus {
 .clients{
   font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     color: var(--text-black);
     letter-spacing: 0.03em;
@@ -432,7 +432,7 @@ nav .portfolio:focus {
  
 .text-lorem{
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
   color: var(--text-grey);
   letter-spacing: 0.03em;
   text-align: justify;
@@ -460,7 +460,7 @@ nav .portfolio:focus {
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   background: rgba(47, 48, 58, 0.8);
   opacity: 100%;
@@ -567,7 +567,7 @@ img {
 
 .imagination{
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px;
   background-color: #fff;
   text-align: center;
 }
@@ -632,7 +632,7 @@ img {
   font-size: 100%;
   padding: 6px 22px;
   border-radius: 4px;
-  line-height: 1.625em;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   margin-left: 8px;
   margin-bottom: 8px;
@@ -661,7 +661,6 @@ img {
   flex-wrap: wrap;
   padding-bottom: 20px;
   justify-content: space-between;
-  line-height: 36px;
   letter-spacing: 0.03em;
  
 }
@@ -693,7 +692,6 @@ img {
   width: 100%;
   height: 100%;
   letter-spacing: 0.03em;
-  line-height: 1.56em;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: var(--transition);
@@ -708,46 +706,35 @@ img {
   padding-right: 24px;
   font-family: "Roboto";
   font-size: 18px;
-  line-height: 28px;
   margin: 0px;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 .underscore{
-  z-index: 1001;
-  background-color: #fff;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  list-style: none;
-  position: absolute;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-top: 20px;
+  padding: 20px 24px;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   letter-spacing: 0.06em;
-  overflow: visible;
 }  
 
-.underscore h3{
+.under_h3{
   width: 322px;
   height: 36px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   margin: 0px;
   padding: 0px;
   padding-bottom: 4px;
 }
-.underscore p{
+.under_p{
   color: #757575;
   width: 322px;
   height: 30px;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   letter-spacing: 0.03em;
   margin: 0px;
 }
@@ -777,10 +764,6 @@ img {
   animation: cursorMoveOut 0.8s forwards;
 }
 
-figcaption{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 footer {
   background-color: var(--black);
   color: #fff;
@@ -809,7 +792,7 @@ footer .end {
   font-size: 26px;
   letter-spacing: 0.03em;
   color: #ffffff;
-  line-height: 1.19;
+  line-height: 1.4;
   text-decoration-line: none;
 }
 .address {
@@ -817,7 +800,7 @@ footer .end {
   color: var(--white);
   font-size: 16px;
   font-style: normal;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   list-style-type: none;
   margin-bottom: 9px;
@@ -869,7 +852,7 @@ footer .stat{
   padding-top: 12px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.16;
+  line-height: 1.4;
   width: 113px;
   height: 16px;
   text-transform: uppercase;
@@ -892,25 +875,26 @@ footer .media:hover,
 footer .media:focus{
   background-color: var(--blue);
 }
+.address_p{
+  padding-top: 8px;
+}
+
 footer .tel {
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
   opacity: 40%;
-  padding-bottom: 8px;
 }
 
 footer .mail {
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
   opacity: 40%;
-  padding-bottom: 8px;
 }
 .newsletter{
   padding-top: 12px;
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -931,7 +915,7 @@ footer .mail {
   margin-top: 20px;
   padding-left: 16px;
 }
-footer label{
+.foot_email{
 margin-bottom: 20px;
 align-items: center; 
 text-transform: uppercase;
@@ -940,8 +924,8 @@ font-weight: bold;
 letter-spacing: 0.03em;
 }
 
-footer input:hover,
-footer input:focus,
+.news-send:hover,
+.news-send:focus,
 footer textarea:focus{
   border: 1px solid var(--blue);
   border-radius: 4px;
@@ -950,7 +934,7 @@ footer textarea:focus{
   background-color: var(--black);
 }
 
-footer button{
+.foot_write{
   width: 200px;
   height: 50px;
   background: var(--blue);
@@ -958,7 +942,7 @@ footer button{
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1007,8 +991,7 @@ footer button{
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--white);
-  width: 528px;
-  height: 581px;
+  padding: 40px;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 4px;
   opacity: 100%;
@@ -1041,11 +1024,10 @@ footer button{
 .form-title{ 
   font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--black);
-    margin-top: 40px;
     margin-bottom: 30px;
 }
 .input-box{
@@ -1054,7 +1036,7 @@ footer button{
   align-items: center;
   outline: none;
 }
-.lab{
+.modal_lab{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1074,8 +1056,8 @@ input{
 .con{
   position: absolute;
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 12px;
   margin-top: 18px;
   margin-left: 12px;
   fill:var(--text-black);
@@ -1097,32 +1079,34 @@ input{
   background-position: left 15px center;
   transition: background-image var(--transition);
 }
-.lab:focus-within,
-.comm:focus-within{
+.modal_lab:focus-within,
+.modal_comm:focus-within{
   fill: var(--blue);
   transition: var(--transition);
 }
- 
-.lab:focus-within svg{
+
+.modal_lab:focus-within svg{
     fill: var(--blue);
     transition: var(--transition);
 }
 
-.form input{
+.back-svg{
   border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 448px;
     height: 40px;
     margin-top: 4px;
     text-indent: 42px;
-    padding: 0px;
+    color: var(--text-grey);
+    font-size: 12px;
+    display: block;
 }
 
-.form textarea{
+.modal_comm{
   width: 448px;
   height: 120px;
   font-size: 12px;
-  line-height: 14px;
+  padding: 12px 16px;
   letter-spacing: 0.01em;
   color: var(--text-grey);
   margin-top: 4px;
@@ -1131,26 +1115,22 @@ input{
   border-radius: 4px;
 }
 
-.form input:focus, 
-.form textarea:focus {
+.back-svg:focus, 
+.modal_comm:focus {
   outline: none;
   transition: var(--transition);
 }
 
-.form input {
-  color: var(--text-grey);
-    font-size: 12px;
-    display: block;
-}
-.form input:focus,
-.form textarea:focus{
+
+.back-svg:focus,
+.modal_comm:focus{
   outline: none;
   transition: var(--transition);
 }
-.form input:hover,
-.form textarea:hover,
-.form input:focus,
-.form textarea:focus{
+.back-svg:hover,
+.modal_comm:hover,
+.back-svg:focus,
+.modal_comm:focus{
   border: 1px solid var(--blue);
   border-radius: 4px;
 }
@@ -1163,7 +1143,7 @@ input{
 }
 .checked-p{
   font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-grey);
     margin: 0px;
@@ -1202,22 +1182,27 @@ input{
   background-position: center;
   margin-right: 9px;
 }
-.form button{
-  width: 200px;
-  height: 50px;
+.form_sent{
+  padding: 25px 100px;
   background: var(--blue);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #fff;
   margin: auto;
+  
   margin-top: 5px;
   border: 0px;
   cursor: pointer;
+}
+.sent_p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
 }
 .form button:hover,
 .form button:focus{
