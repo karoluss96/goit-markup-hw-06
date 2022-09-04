@@ -347,9 +347,7 @@ nav .portfolio:focus {
   padding-top: 40px;
   padding-bottom: 20px;
 }
-.lorem-li{
-  margin-right: 30px;
-}
+
 .sec2,
 .lorem{
   background-color: var(--white);
@@ -505,28 +503,20 @@ img {
   display: block;
 }
 .list-us figcaption{
-  margin-bottom: 30px;
+  padding: 30px 34px;
 }
 .social-media{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 20px;
 }
-.soc-li{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 20px;
-  height: 20px;
-}
+
 .soc-media{
   align-items: center;
   justify-content: center;
+  width: 20px;
+  height: 20px;
 }
 .social-link{
   display: flex;
@@ -585,7 +575,6 @@ img {
   font-weight: bold;
   letter-spacing: 0.03em;
   text-align: center;
-  padding: 30px 97px 10px;
 }
 .job{
   color: var(--text-grey);
@@ -811,6 +800,7 @@ footer .mail:focus,
 footer .tel:hover,
 footer .tel:focus{
   text-decoration: underline;
+  color: var(--text-grey);
 }
 footer .stat{
   color: var(--white);
@@ -925,8 +915,7 @@ letter-spacing: 0.03em;
 }
 
 .news-send:hover,
-.news-send:focus,
-footer textarea:focus{
+.news-send:focus{
   border: 1px solid var(--blue);
   border-radius: 4px;
   outline: none;
@@ -938,7 +927,6 @@ footer textarea:focus{
   width: 200px;
   height: 50px;
   background: var(--blue);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -955,6 +943,12 @@ footer textarea:focus{
   margin-left: 12px;
   margin-top: 30px;
   padding-bottom: 3px;
+}
+.foot_write:hover,
+.foot_write:focus{
+  background: var(--grey);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  color: var(--text-black);
 }
 .send{
   width: 24px;
