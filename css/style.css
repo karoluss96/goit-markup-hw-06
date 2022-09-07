@@ -53,6 +53,7 @@ Single-colored icons can be modified like so:
 
 .icon-antena {
   width: 0.9423828125em;
+  background-image: url('../images/antena.svg');
 }
 
 .icon-astronaut {
@@ -179,8 +180,6 @@ ol {
 }
 .list-nav{
   display: flex;
-  margin: 0px;
-  padding: 0px;
  }
 .list-nav a{
    text-decoration: none;
@@ -367,7 +366,6 @@ nav .portfolio:focus {
     text-align: center;
     color: var(--text-black);
     letter-spacing: 0.03em;
-    margin: 0px;
     margin-bottom: 50px;
 }
 .list-clients{
@@ -392,17 +390,7 @@ nav .portfolio:focus {
   transition-property: fill, background-color;
   transition: var(--transition);
 }
-.corpos{
-  width: 170px;
-  height: 92px;
-  border-radius: 4px;
-  border: 1px solid #AFB1B8;
-  fill: #757575;
-  box-sizing: border-box;
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-}
+
 .corpos .ics{
   width: 106px;
   height: 60px;
@@ -411,11 +399,7 @@ nav .portfolio:focus {
   width: 70px;
   height: 70px;
 }
-.corpos:hover,
-.corpos:focus{
-  fill:var(--blue);
-  border: 1px solid var(--blue);
-}
+
 
 .text{
   font-size: 14px;
@@ -426,14 +410,17 @@ nav .portfolio:focus {
   text-align: left;
   list-style: none;
   padding-right: 30px;
+  padding-top: 56px;
 }
  
 .text-lorem{
+  padding-top: 10px;
   font-size: 14px;
   line-height: 1.7;
   color: var(--text-grey);
   letter-spacing: 0.03em;
   text-align: justify;
+  
 }
 .list-images{
   display: flex;
@@ -592,6 +579,7 @@ img {
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   fill: var(--text-grey);
+  box-sizing: border-box;
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -606,6 +594,7 @@ img {
   justify-content: center;
   list-style-type: none;
   flex-wrap: wrap;
+  margin-top: 38px;
   margin-left: -8px;
   margin-bottom: -8px;
   padding-bottom: 50px;
@@ -695,7 +684,6 @@ img {
   padding-right: 24px;
   font-family: "Roboto";
   font-size: 18px;
-  margin: 0px;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -708,14 +696,10 @@ img {
 }  
 
 .under_h3{
-  width: 322px;
-  height: 36px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 0px;
-  padding: 0px;
   padding-bottom: 4px;
 }
 .under_p{
@@ -725,7 +709,6 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  margin: 0px;
 }
 .blue-hover:active,
 .blue-hover:hover,
@@ -737,8 +720,6 @@ img {
 .imagine-port{
   position: relative;
   width: 370px;
-  height: 404px;
-  margin: 0px;
   overflow: hidden;
   align-items: center;
   background-color: #fff;
@@ -801,6 +782,8 @@ footer .tel:hover,
 footer .tel:focus{
   text-decoration: underline;
   color: var(--text-grey);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
 footer .stat{
   color: var(--white);
@@ -819,7 +802,6 @@ footer .stat{
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding: 0px;
   flex-wrap: wrap;
   gap: 10px;
   border-radius: 50%;
@@ -888,7 +870,6 @@ footer .mail {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin: 0px;
 }
 .send-us{
   display: flex;
@@ -975,9 +956,6 @@ letter-spacing: 0.03em;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
-.close-btn:hover{
-	cursor: pointer;
-}
 
 .modal{
   position: absolute;
@@ -1002,6 +980,11 @@ letter-spacing: 0.03em;
   border: 1px solid rgba(0, 0, 0, 1);
   opacity: 100%;
   z-index: 1000;
+}
+.close-btn:hover{
+  color: var(--blue);
+  border-color: var(--blue);
+	cursor: pointer;
 }
 .is-hidden{
   opacity: 0;
@@ -1103,6 +1086,7 @@ input{
   padding: 12px 16px;
   letter-spacing: 0.01em;
   color: var(--text-grey);
+  opacity: 50%;
   margin-top: 4px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1136,11 +1120,11 @@ input{
   cursor: pointer;
 }
 .checked-p{
+  margin-top: 1px;
   font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-grey);
-    margin: 0px;
     margin-left: 8px;
     transition: var(--transition);
 }
@@ -1174,7 +1158,7 @@ input{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-right: 9px;
+  margin-right: 8px;
 }
 .form_sent{
   padding: 25px 100px;
@@ -1184,13 +1168,12 @@ input{
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #fff;
-  margin: auto;
-  
-  margin-top: 5px;
+  margin-top: 30px;
   border: 0px;
   cursor: pointer;
 }
 .sent_p{
+  line-height: 1.5;
   display: flex;
   align-items: center;
   justify-content: center;
