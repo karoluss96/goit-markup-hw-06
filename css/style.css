@@ -182,6 +182,10 @@ ol {
   display: flex;
   align-items: center;
 }
+.list-menu1:focus,
+.list-menu1:hover{
+  color: var(--blue);
+}
 .list-nav{
   display: flex;
   align-items:center;
