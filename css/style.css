@@ -177,7 +177,10 @@ ol {
 }
 .list-menu{
   display: flex;
-  
+}
+.list-menu1{
+  display: flex;
+  align-items: center;
 }
 .list-nav{
   display: flex;
@@ -213,7 +216,8 @@ header .mail{
   margin-left: 50px;
   display: flex;
 }
-.list-nav1:hover{
+.list-nav1 a:hover,
+.list-nav1 a:focus{
   color: var(--blue);
 }
 
@@ -943,6 +947,10 @@ letter-spacing: 0.03em;
   width: 24px;
   height: 24px;
   margin-left: 25px;
+}
+.send:hover,
+.send:focus{
+  color: var(--text-black);
 }
 .backdrop{
   opacity: 100%;
