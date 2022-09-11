@@ -184,18 +184,22 @@ ol {
   display: flex;
   align-items: center;
 }
+
 .list-menu1:focus,
 .list-menu1:hover{
   color: var(--blue);
+  transition: var(--transition);
 }
 
 .list-menu1 tel:focus,
 .list-menu1 tel:hover{
-  color: var(--blue);
+  fill: var(--blue);
+  transition: var(--transition);
 }
 .list-menu1 mail:focus,
 .list-menu1 mail:hover{
-  color: var(--blue);
+  fill: var(--blue);
+  transition: var(--transition);
 }
 .list-nav{
   display: flex;
