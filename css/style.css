@@ -183,6 +183,7 @@ ol {
 .list-menu1{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .list-menu1:focus,
