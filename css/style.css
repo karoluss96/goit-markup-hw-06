@@ -216,6 +216,7 @@ header .tel,
 header .mail{
   color: var(--text-black);
   margin-left: 10px;
+  align-items: center;
 }
 
 .list-nav1{
