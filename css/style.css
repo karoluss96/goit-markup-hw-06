@@ -189,6 +189,15 @@ ol {
 .list-menu1:hover{
   color: var(--blue);
 }
+
+.list-menu1 tel:focus,
+.list-menu1 tel:hover{
+  color: var(--blue);
+}
+.list-menu1 mail:focus,
+.list-menu1 mail:hover{
+  color: var(--blue);
+}
 .list-nav{
   display: flex;
   align-items:center;
@@ -1202,10 +1211,9 @@ input{
   cursor: pointer;
 }
 .sent_p{
-  width: 48px;
-  height: 30px;
+  padding: 10px 76px;
   letter-spacing: 0.06em;
-  line-height: 1.875;
+  line-height: 1.88;
   display: flex;
   align-items: center;
   justify-content: center;
