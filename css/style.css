@@ -191,13 +191,13 @@ ol {
   transition: var(--transition);
 }
 
-.list-menu1 tel:focus,
-.list-menu1 tel:hover{
+.list-menu1 .tel:focus,
+.list-menu1 .tel:hover{
   fill: var(--blue);
   transition: var(--transition);
 }
-.list-menu1 mail:focus,
-.list-menu1 mail:hover{
+.list-menu1 .mail:focus,
+.list-menu1 .mail:hover{
   fill: var(--blue);
   transition: var(--transition);
 }
