@@ -236,6 +236,7 @@ header .mail{
 .list-nav1 a:hover,
 .list-nav1 a:focus{
   color: var(--blue);
+  transition: var(--transition);
 }
 
 .main-container{
@@ -269,6 +270,7 @@ header .agency:focus,
 header .contact:hover,
 header .contact:focus{
   color: var(--blue);
+  transition: var(--transition);
 }
 
 header .tel,
@@ -294,6 +296,7 @@ header .mail:focus{
   color: var(--blue);
   fill: var(--blue);
   cursor: pointer;
+  transition: var(--transition);
 }
 header .ic{
   display: flex;
@@ -303,7 +306,7 @@ header .ic{
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 header .ics{
-  margin-right: 20px;
+  margin-right: 10px;
   fill: var(--text-grey);
   transition-property: fill, background-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -318,6 +321,7 @@ header .tel .ics{
 }
 header .ics:hover{
 	fill: var(--blue);
+  transition: var(--transition);
 }
 .list-menu:not(:last-child) {
   margin-right: 46px;
@@ -327,6 +331,7 @@ header .ics:hover{
 nav .portfolio:hover,
 nav .portfolio:focus {
   color: var(--blue);
+  transition: var(--transition);
 }
 .sec1{
   background-color: rgba(47, 48, 58, 1);
@@ -375,7 +380,8 @@ nav .portfolio:focus {
   padding-bottom: 94px;
 }
 .section-port{
-  padding-top: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .sec2,
@@ -387,8 +393,10 @@ nav .portfolio:focus {
   align-items: center;
   justify-content: space-between;
 }
-.section .but:hover {
+.section .but:hover,
+.section .but:focus {
   border-radius: 4px;
+  transition: var(--transition);
 }
 .clients{
   font-weight: 700;
@@ -441,7 +449,7 @@ nav .portfolio:focus {
   text-align: left;
   list-style: none;
   padding-right: 30px;
-  padding-top: 56px;
+  padding-top: 30px;
 }
  
 .text-lorem{
@@ -550,6 +558,7 @@ img {
 .social-link:focus{
   background-color: var(--blue);
   fill: var(--white);
+  transition: var(--transition);
 }
 
 .sec4{
@@ -575,7 +584,7 @@ img {
 
 .imagination{
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-  border-radius: 0px;
+  border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   text-align: center;
 }
@@ -620,13 +629,13 @@ img {
   border: 1px solid var(--blue);
   fill: var(--blue);
   color: var(--blue);
+  transition: var(--transition);
 }
 .list-buttons{
   display: flex;
   justify-content: center;
   list-style-type: none;
   flex-wrap: wrap;
-  margin-top: 20px;
   margin-left: -8px;
   margin-bottom: -8px;
 }
@@ -649,11 +658,13 @@ img {
   cursor: pointer;
   text-transform: none;
 }
-.list-buttons .but:hover{
+.list-buttons .but:hover,
+.list-buttons .but:focus{
   background-color: var(--blue);
   color: var(--white);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
   0px 2px 1px rgb(0 0 0 / 20%);
+  transition: var(--transition);
 }
 
 .section .but:hover,
@@ -663,6 +674,7 @@ img {
   cursor: pointer;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
   0px 2px 1px rgb(0 0 0 / 20%);
+  transition: var(--transition);
 }
 
 .list-photos{
@@ -679,7 +691,7 @@ img {
   justify-content: space-between;
   box-sizing: border-box;
   border: 1px solid var(--white);
-  margin-bottom: 30px;
+  margin-bottom: 94px;
   background: var(--white);
   border: 0px;
   cursor: pointer;
@@ -746,6 +758,7 @@ img {
 .blue-hover:hover,
 .blue-hover:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: var(--transition);
 }
 
 
@@ -764,6 +777,7 @@ img {
   cursor: pointer;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%);
   animation: cursorMoveOut 0.8s forwards;
+  transition: var(--transition);
 }
 
 footer {
@@ -815,6 +829,7 @@ footer .tel:focus{
   text-decoration: underline;
   color: var(--blue);
   border-radius: 4px;
+  transition: var(--transition);
 }
 footer .stat{
   color: var(--white);
@@ -839,8 +854,10 @@ footer .stat{
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--white);
 }
-.join-li:hover{
+.join-li:hover,
+.join-li:focus{
   background-color: var(--blue);
+  transition: var(--transition);
 }
 .media{
   width: 20px;
@@ -876,26 +893,27 @@ footer .stat{
 .foot-link:hover,
 .foot-link:focus{
   color: var(--white);
+  transition: var(--transition);
 }
 footer .media:hover,
 footer .media:focus{
   background-color: var(--blue);
+  transition: var(--transition);
 }
 .address_p{
   padding-top: 8px;
 }
 
-footer .tel {
+footer .tel,
+footer .mai {
+  font-size: 14px;
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
   opacity: 40%;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-footer .mail {
-  text-decoration-line: none;
-  color: rgba(255, 255, 255, 0.6);
-  opacity: 40%;
-}
 .newsletter{
   padding-top: 12px;
   font-family: 'Roboto';
@@ -964,6 +982,7 @@ letter-spacing: 0.03em;
   background: var(--grey);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   color: var(--text-black);
+  transition: var(--transition);
 }
 .send{
   width: 24px;
@@ -973,6 +992,7 @@ letter-spacing: 0.03em;
 .send:hover,
 .send:focus{
   color: var(--text-black);
+  transition: var(--transition);
 }
 .backdrop{
   opacity: 100%;
@@ -1019,10 +1039,12 @@ letter-spacing: 0.03em;
   opacity: 100%;
   z-index: 1000;
 }
-.close-btn:hover{
+.close-btn:hover,
+.close-btn:focus{
   color: var(--blue);
   border-color: var(--blue);
 	cursor: pointer;
+  transition: var(--transition);
 }
 .is-hidden{
   opacity: 0;
@@ -1076,6 +1098,11 @@ input{
   margin-top: 18px;
   margin-left: 12px;
   fill:var(--text-black);
+}
+.con:hover,
+.con:focus{
+  fill: var(--blue);
+  transition: var(--transition);
 }
 .svg-name{
   width: 12px;
@@ -1149,6 +1176,7 @@ input{
 .modal_comm:focus{
   border: 1px solid var(--blue);
   border-radius: 4px;
+  transition: var(--transition);
 }
 
 .checkbox{
@@ -1191,6 +1219,7 @@ input{
   cursor: pointer;
   text-decoration:underline;
   color: var(--blue);
+  transition: var(--transition);
 }
 
 .check-lex:checked + .checked-p::before {
@@ -1211,7 +1240,6 @@ input{
   letter-spacing: 0.06em;
   color: #fff;
   margin-top: 30px;
-  margin-bottom: 40px;
   border: 0px;
   cursor: pointer;
 }
@@ -1230,6 +1258,7 @@ input{
 .form button:focus{
   background-color: var(--grey);
   color: #212121;
+  transition: var(--transition);
 }
 .visually-hidden{
   position: absolute !important;
