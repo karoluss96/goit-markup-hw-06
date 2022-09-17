@@ -319,14 +319,19 @@ header .tel .ics{
   width: 10px;
   height: 16px;
 }
-header .ics:hover{
+header .ics:hover,
+header .ics:focus{
 	fill: var(--blue);
   transition: var(--transition);
 }
 .list-menu:not(:last-child) {
   margin-right: 46px;
 }
-
+header .mail:hover > .ics,
+header .tel:hover > .ics{
+  fill: var(--blue);
+  transition: var(--transition);
+}
 
 nav .portfolio:hover,
 nav .portfolio:focus {
@@ -379,9 +384,12 @@ nav .portfolio:focus {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-port{
+.section-port1{
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 56px;
+}
+.section-port2{
+  padding-bottom: 94px;
 }
 
 .sec2,
