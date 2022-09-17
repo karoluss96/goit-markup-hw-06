@@ -989,8 +989,8 @@ letter-spacing: 0.03em;
   height: 24px;
   margin-left: 25px;
 }
-.send:hover,
-.send:focus{
+.foot_write .send:hover,
+.foot_write .send:focus{
   color: var(--text-black);
   transition: var(--transition);
 }
