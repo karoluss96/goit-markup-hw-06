@@ -389,7 +389,7 @@ nav .portfolio:focus {
   padding-bottom: 56px;
 }
 .section-port2{
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 
 .sec2,
@@ -987,10 +987,7 @@ letter-spacing: 0.03em;
 }
 .foot_write:hover,
 .foot_write:focus{
-  background: var(--grey);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  color: var(--text-black);
-  transition: var(--transition);
+  box-shadow: 0px 4px 4px var(--blue);
 }
 .send{
   width: 24px;
