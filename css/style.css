@@ -327,8 +327,8 @@ header .ics:focus{
 .list-menu:not(:last-child) {
   margin-right: 46px;
 }
-header .mail:hover > .ics,
-header .tel:hover > .ics{
+header .mail:hover > header .ics,
+header .tel:hover > header .ics{
   fill: var(--blue);
   transition: var(--transition);
 }
@@ -913,7 +913,7 @@ footer .media:focus{
 }
 
 footer .tel,
-footer .mai {
+footer .mail {
   font-size: 14px;
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
@@ -1000,6 +1000,7 @@ letter-spacing: 0.03em;
 .foot_write .send:hover,
 .foot_write .send:focus{
   color: var(--text-black);
+  fill: var(--text-black);
   transition: var(--transition);
 }
 .backdrop{
@@ -1124,11 +1125,6 @@ input{
   width: 15px;
   height: 12px;
 }
-.back-svg{
-  background-repeat: no-repeat;
-  background-position: left 15px center;
-  transition: background-image var(--transition);
-}
 .modal_lab:focus-within,
 .modal_comm:focus-within{
   fill: var(--blue);
@@ -1137,6 +1133,7 @@ input{
 
 .modal_lab:focus-within svg{
     fill: var(--blue);
+    color: var(--blue);
     transition: var(--transition);
 }
 
@@ -1150,6 +1147,9 @@ input{
     color: var(--text-grey);
     font-size: 12px;
     display: block;
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    transition: background-image var(--transition);
 }
 
 .modal_comm{
@@ -1166,24 +1166,13 @@ input{
   border-radius: 4px;
 }
 
-.back-svg:focus, 
-.modal_comm:focus {
-  outline: none;
-  transition: var(--transition);
-}
-
-
-.back-svg:focus,
-.modal_comm:focus{
-  outline: none;
-  transition: var(--transition);
-}
 .back-svg:hover,
 .modal_comm:hover,
-.back-svg:focus,
-.modal_comm:focus{
+.back-svg:focus, 
+.modal_comm:focus {
   border: 1px solid var(--blue);
   border-radius: 4px;
+  outline: none;
   transition: var(--transition);
 }
 
