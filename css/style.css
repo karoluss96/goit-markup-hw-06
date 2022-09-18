@@ -1118,7 +1118,9 @@ input{
   width: 15px;
   height: 12px;
 }
-.back_svg:focus-within + .con,
+.svg-name .back_svg:focus-within + .con,
+.svg-tel .back_svg:focus-within + .con,
+.svg-mail .back_svg:focus-within + .con,
 .back_svg:hover + .con{
   fill: var(--blue);
   transition: var(--transition);
