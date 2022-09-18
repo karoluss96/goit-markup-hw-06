@@ -1118,8 +1118,8 @@ input{
   width: 15px;
   height: 12px;
 }
-.back-svg:focus-within > .con,
-.back-svg:hover > .con{
+.back-svg:focus-within > svg{
+color: var(--blue);
   fill: var(--blue);
   transition: var(--transition);
 }
