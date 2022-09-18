@@ -1123,7 +1123,9 @@ input{
   height: 12px;
 }
 .modal_lab:focus-within >svg,
-.modal_comm:focus-within >svg{
+.modal_lab:hover >svg,
+.modal_comm:focus-within >svg,
+.modal_comm:hover >svg{
   fill: var(--blue);
   transition: var(--transition);
 }
