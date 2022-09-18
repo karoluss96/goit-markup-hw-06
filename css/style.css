@@ -1118,7 +1118,7 @@ input{
   width: 15px;
   height: 12px;
 }
-input:focus-within >svg{
+input:focus-within + svg{
   fill: var(--blue);
   transition: var(--transition);
 }
