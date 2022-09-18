@@ -327,8 +327,8 @@ header .ics:focus{
 .list-menu:not(:last-child) {
   margin-right: 46px;
 }
-header .mail:hover > header .ics,
-header .tel:hover > header .ics{
+header .mail:hover > .ics,
+header .tel:hover > .ics{
   fill: var(--blue);
   transition: var(--transition);
 }
@@ -689,6 +689,7 @@ img {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 94px;
   padding-bottom: 20px;
   justify-content: space-between;
   letter-spacing: 0.03em;
@@ -699,7 +700,6 @@ img {
   justify-content: space-between;
   box-sizing: border-box;
   border: 1px solid var(--white);
-  margin-bottom: 94px;
   background: var(--white);
   border: 0px;
   cursor: pointer;
@@ -1122,16 +1122,10 @@ input{
   width: 15px;
   height: 12px;
 }
-.modal_lab:focus-within,
-.modal_comm:focus-within{
+.modal_lab:focus-within >svg,
+.modal_comm:focus-within >svg{
   fill: var(--blue);
   transition: var(--transition);
-}
-
-.modal_lab:focus-within > svg {
-    fill: var(--blue);
-    color: var(--blue);
-    transition: var(--transition);
 }
 
 .back-svg{
