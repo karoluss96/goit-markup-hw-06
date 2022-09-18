@@ -1128,7 +1128,7 @@ input{
   transition: var(--transition);
 }
 
-.modal_lab:focus-within> .con {
+.modal_lab:focus-within > svg {
     fill: var(--blue);
     color: var(--blue);
     transition: var(--transition);
