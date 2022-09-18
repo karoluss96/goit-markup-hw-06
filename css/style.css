@@ -327,8 +327,8 @@ header .ics:focus{
 .list-menu:not(:last-child) {
   margin-right: 46px;
 }
-header .mail:hover >  .ics,
-header .tel:hover > .ics{
+header .mail:hover > header .ics,
+header .tel:hover > header .ics{
   fill: var(--blue);
   transition: var(--transition);
 }
