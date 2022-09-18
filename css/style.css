@@ -1128,7 +1128,7 @@ input{
   transition: var(--transition);
 }
 
-.modal_lab .con:focus-within {
+.modal_lab:focus-within> .con {
     fill: var(--blue);
     color: var(--blue);
     transition: var(--transition);
