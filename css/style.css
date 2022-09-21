@@ -397,6 +397,7 @@ nav .portfolio:focus {
   background-color: var(--white);
   display: flex;
   gap:30px;
+  padding-bottom: 0;
   letter-spacing: 0.03em;
   align-items: center;
   justify-content: space-between;
@@ -691,7 +692,7 @@ img {
   flex-wrap: wrap;
   margin-bottom: 94px;
   padding-bottom: 20px;
-  justify-content: space-between;
+  gap: 30px;
   letter-spacing: 0.03em;
  
 }
@@ -1118,7 +1119,7 @@ input{
   width: 15px;
   height: 12px;
 }
-.back-svg:focus-within > svg{
+.modal-lab:focus-within > svg{
 color: var(--blue);
   fill: var(--blue);
   transition: var(--transition);
