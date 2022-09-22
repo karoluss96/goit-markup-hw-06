@@ -946,6 +946,7 @@ footer .mail {
   background-color: var(--black);
   margin-top: 20px;
   padding-left: 16px;
+  color: var(--white);
 }
 .foot_email{
 margin-bottom: 20px;
@@ -1138,6 +1139,9 @@ color: var(--blue);
     background-repeat: no-repeat;
     background-position: left 15px center;
     transition: background-image var(--transition);
+}
+.back-svg:focus + svg { 
+  fill: var(--blue);  
 }
 
 .modal_comm{
